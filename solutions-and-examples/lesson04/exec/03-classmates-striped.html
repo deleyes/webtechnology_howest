@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Classmates Striped</title>
+   <style type="text/css">
+
+   table {
+
+      border-collapse: collapse;
+   }
+
+   td, th {
+
+      padding: 1em;
+      border-left: solid grey 1px;
+   }
+
+   td:first-child ,
+   th:first-child {
+
+      border: none;
+   }
+
+   tr:nth-child(2n+1) td {
+
+      background: lightgrey;
+   }
+
+   tr:hover td {
+
+      background: yellow;
+   }
+
+   </style>
+</head>
+<body>
+
+   <table>
+
+      <caption>Classmates</caption>
+      
+
+      <tr>
+         <th>First name</th>
+         <th>Last name</th>
+         <th>Age</th>
+      </tr>
+
+      <tr>
+         <td>John</td>
+         <td>Doe</td>
+         <td>21</td>
+      </tr>
+
+      <tr>
+         <td>Jane</td>
+         <td>Doe</td>
+         <td>24</td>
+      </tr>
+      
+      <tr>
+         <td>Jake</td>
+         <td>Doe</td>
+         <td>18</td>
+      </tr>
+      
+      <tr>
+         <td>Lisa</td>
+         <td>Peters</td>
+         <td>20</td>
+      </tr>
+      
+      <tr>
+         <td>Kim</td>
+         <td>Jansens</td>
+         <td>26</td>
+      </tr>
+      
+      <tr>
+         <th colspan="2">Total</th>
+         <th>63</th>
+      </tr>
+      
+   </table>
+   
+   
+</body>
+</html>

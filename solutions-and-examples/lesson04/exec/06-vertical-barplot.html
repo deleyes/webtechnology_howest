@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Vertical Barplot</title>
+   <style type="text/css">
+
+   .graph {
+
+      border-left: solid black 1px;
+      border-bottom: solid black 1px;
+      padding: 1em;
+      margin: 2em;
+      width: 350px;
+      position: relative;
+   }
+   
+   .bar-wrap {
+
+      border: solid grey 1px;
+      width: 50px;
+      height: 500px;
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+   }
+
+   .bar-fill {
+
+      background: lightblue;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      padding-top: 0.25em;
+      box-sizing: border-box;
+   }
+
+   .x {
+
+      position: absolute;
+      bottom: -1.5em;
+      left: 50%;
+   }
+
+   .y {
+
+      position: absolute;
+      left: -1em;
+      top: 50%;
+   }
+
+   </style>
+</head>
+<body>
+
+   <div class="graph">
+
+      <div class="x">X</div>
+      <div class="y">Y</div>
+      
+
+      <div class="bar-wrap">
+         <div class="bar-fill" style="height:75%;">
+            75%
+         </div>
+      </div>
+      
+      <div class="bar-wrap">
+         <div class="bar-fill" style="height:25%;">
+            25%
+         </div>
+      </div>
+
+      <div class="bar-wrap">
+         <div class="bar-fill" style="height:50%;">
+            50%
+         </div>
+      </div>
+
+      <div class="bar-wrap">
+         <div class="bar-fill" style="height:100%;">
+            100%
+         </div>
+      </div>
+   </div>
+</body>
+</html>

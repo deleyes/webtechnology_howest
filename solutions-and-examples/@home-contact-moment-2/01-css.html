@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Our CSS page</title>
+   <style type="text/css">
+      h1 { background: red ; }
+   </style>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+   <h1 style="background: red;">CSS</h1>
+
+   <style type="text/css">
+   .display {
+      border: solid black 1px;
+
+      display: inline-block;
+      width: 150px;
+      height: 75px;
+
+      /*display: none;
+      visibility: hidden*/
+
+      opacity: 0.5;
+
+      overflow: visible;
+      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: scroll;
+   }
+   </style>
+
+   hello world
+   
+   <div class="display">
+      About element displays
+      About element displays
+      About element displays
+      About element displays
+      About element displays
+   </div>
+   
+   <div class="display">
+      About element displays
+   </div>
+
+   <div class="display">
+      About element displays
+   </div>
+   
+   after
+
+   <style type="text/css">
+   
+   .position, .pos-child {
+
+      padding: 1em;
+      border: solid black 1px;
+   }
+
+   .position {
+
+      position: relative;
+      height: 150px;
+   }
+
+   .pos-child {
+
+      background: lightblue;
+      position: static;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+   }
+
+   .pos-fixed {
+
+      background: yellow;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+   }
+
+   </style>
+   
+   <div class="position">
+      Parent
+      <div class="pos-child">
+         Child
+      </div>
+      <div class="pos-fixed">
+         Fixed
+      </div>
+   </div>
+   
+
+   <style type="text/css">
+
+   .float, .float-wrap {
+
+      border: solid black 1px;
+      padding: 0.5em;
+   }
+   .float {
+
+      background: lightblue;
+      float: left;
+      margin: 0.5em;
+      padding: 1em;
+   }
+
+   .clear {
+
+      clear: both;
+   }
+   
+   </style>
+
+   <div class="float-wrap">
+      <div class="float">
+         Float me...
+      </div>
+      
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+      Some text here...
+
+      <div class="float">
+         Float me...
+      </div>
+      
+      Some text here...
+
+      <div class="clear">
+         Clear me
+      </div>
+      
+   </div>
+   
+   <p>Paragraph</p>
+   
+   
+   <style type="text/css">
+
+   
+   div { all div element }
+   .classname  { ... }
+   #idname { ... }
+
+   div, .classname, #idname { ... }
+
+   div , p { background: green; }
+
+   </style>
+   
+
+   <style type="text/css">
+   div p {
+
+      background: red;
+   }
+
+   div > p {
+
+      color: white;
+   }
+
+   p + p {
+
+   }
+
+   .classname + p {
+
+      border: solid blue 5px;
+   }
+
+   p:nth-child(3n) {
+
+      background: yellow;
+   }
+   p:first-child, p:last-child{
+
+      background: pink;
+   }
+
+   p:hover {
+
+      background: black;
+   }
+   </style>
+   
+   <p>Paragraph</p>
+
+   <div>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <div>Not P</div>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+   </div>
+
+   <div>
+      <blockquote>
+         <p>Paragraph</p>
+      </blockquote>
+   </div>
+
+</body>
+</html>

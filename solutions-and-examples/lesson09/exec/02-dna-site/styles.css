@@ -1,0 +1,19 @@
+ul.navbar {
+
+   margin: 0;
+   padding: 1em;
+   border-bottom: solid grey 1px;
+}
+
+ul.navbar li {
+
+   display: inline-block;
+   padding: 0 2em;
+}
+
+img {
+
+   width: 100px;
+   float: left;
+   padding: 1em;
+}

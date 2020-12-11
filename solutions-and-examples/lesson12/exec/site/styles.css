@@ -1,0 +1,15 @@
+body {
+
+   background: #eee;
+}
+
+.navbar {
+
+   background: grey;
+   padding: 1em;
+}
+
+h1 {
+
+   border-bottom: solid orange 2px;
+}

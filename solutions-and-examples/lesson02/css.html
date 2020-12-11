@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>CSS</title>
+</head>
+<body>
+
+   <style type="text/css">
+   .colors {
+
+      color: darkred;
+      /* color: rgb( 0-255, 0-255, 0-255 ); */
+      color: rgb( 255, 0, 0 );
+      color: rgb( 0, 255, 0 );
+      color: rgb( 0, 0, 255 );
+      color: rgb( 255, 0, 255 );
+      color: rgb( 0, 255, 255 );
+      color: rgb( 255, 255, 255 );
+      color: rgb( 0, 0, 0 );
+      /* color: #RRGGBB; */
+      color: #ff0000;
+      color: #00ff00;
+      color: #0000ff;
+      color: #FFDC58;
+
+   }
+   </style>
+   
+   <div class="colors">
+      This is the colors div
+   </div>
+   
+
+
+
+   <style type="text/css">
+   .background {
+
+      background: #ff0000;
+      background: blue;
+      background: rgb( 0, 255, 0);
+
+      background: #000;
+      background: #000000;
+      background: #fff;
+   }
+   </style>
+
+   <div class="background">this is the background div</div>
+
+
+   <style type="text/css">
+   .border {
+
+      border: solid green 3px;
+      border-color: red;
+      border-width: 5px;
+      border-style: dashed;
+
+      border: dashed red 5px;
+
+      border-top-color: blue;
+
+      border-top: dotted yellow 10px;
+
+      border: dashed red 5px;
+   }
+   </style>
+
+   <div class="border">this is the border div</div>
+   
+   
+
+   <style type="text/css">
+   .margin {
+
+      border: solid red 1px;
+      margin: 100px;
+      margin-top: 20px;
+      margin-right: 30px;
+      margin-bottom: 40px;
+      margin-left: 50px;
+
+      margin: 20px 30px 40px 50px;
+      margin: 20px 50px;
+      /* margin: 20px 50px 20px 50px; */
+   }
+   </style>
+
+   <div>before</div>
+   <div class="margin">apply margin to this el</div>
+   <div>after</div>
+
+   <style type="text/css">
+   .padding {
+
+      border: solid blue 1px;
+
+      padding: 50px;
+      padding-top: 10px;
+      padding: 20px 30px 40px 50px;
+      padding: 20px 40px;
+   }
+   </style>
+
+   <div>before</div>
+   <div class="padding">
+      apply padding to this el
+      <div class="margin">some child el</div>
+      <div class="">some child el</div>
+   </div>
+   <div>after</div>
+
+
+
+   <style type="text/css">
+   .width-height {
+
+      border: solid red 10px;
+
+      height: 100px;
+      width: 350px;
+
+      /* display: block;
+      display: inline;
+      display: inline-block; */
+
+      box-sizing: content-box; /* you gave to add border and padding to get real width */
+      box-sizing: border-box; /* Border and padding are included... */
+
+      overflow: auto;
+      overflow-x: scroll;
+      overflow-y: scroll;
+   }
+   </style>
+   
+   <div class="width-height">
+      This is the width height element...
+      This is the width height element...
+      This is the width height element...
+      This is the width height element...
+      This is the width height element...
+      This is the width height element...
+   </div>
+
+   <!-- <span class="width-height"> -->
+   <!--    This is a span with width and height -->
+   <!-- </span> -->
+   
+   
+
+   <style type="text/css">
+   .outline {
+
+      border: solid green 5px;
+      padding: 100px;
+      padding: 1em;
+      margin: 1em;
+      outline: solid red 5px;
+
+      background: blue;
+      color: white;
+      border: solid white 2px;
+      outline: solid blue 2px;;
+   }
+   </style>
+   
+   <div>before</div>
+   <div class="outline">this is the outlined element</div>
+   <div>after</div>
+   
+
+
+   <style type="text/css">
+   .fonts {
+
+      font-size: 30px;
+      font-size: 120%;
+      font-size: 2em;
+      font-size: 18pt;
+
+      border: solid green 0.3em;
+      padding: 18pt;
+
+      font-size: 0.8em;
+      font-size: 1em;
+      color: red;
+      font-weight: bold;
+      font-style: italic;
+      font-family: sans-serif;
+      /* font-variant: small-caps; */
+
+      text-decoration: underline;
+      text-decoration: overline;
+      text-decoration: overline underline;
+      text-decoration: none;
+
+      text-align: left;
+      /*text-align: right;
+      text-align: center;
+      text-align: justify;*/
+
+      word-spacing: 2px;
+      letter-spacing: 0.2em;
+   }
+   </style>
+   
+   <p class="fonts">
+      This elements has Font styles applied
+      This elements has Font styles applied
+      This elements has Font styles applied
+      This elements has Font styles applied
+      This elements has Font styles applied
+   </p>
+   
+
+   <h1 class="hover" style="font-size: 50pt;">
+      H1 EM
+      <span style="font-size: 10px;">child</span>
+      
+   </h1>
+   
+
+
+   <style type="text/css">
+   .hover:hover {
+
+      background: pink;
+      font-weight: bold;
+      border-style: dashed;
+   }
+
+   .hover {
+
+      border: solid red 1px;
+      padding: 0.5em;
+      background: yellow;
+   }
+   </style>
+
+   <div class="hover">Hover me!</div>
+   
+   
+   <style type="text/css">
+   .anchor-p {
+
+      padding: 3em;
+   }
+   
+   a {
+
+      color: green;
+   }
+
+   a:link {
+
+      color: violet;
+   }
+   a:visited {
+
+      color: red;
+   }
+   a:hover {
+
+      color: darkred;
+   }
+   a:active {
+
+      color: lightgreen;
+   }
+
+   </style>
+
+   <div class="anchor-p">
+      <a href="https://google.com">Google</a>
+      <a href="https://github.com">Github</a>
+      <a href="https://vib.be">VIB</a>
+   </div>
+   
+   
+
+   <style type="text/css">
+
+   ol { 
+
+      list-style-type: upper-roman;
+   }
+
+   ul {
+
+      list-style-type: square;
+   }
+
+   </style>
+   
+   <ol>
+      <li> Item 1</li>
+      <li> Item 2</li>
+      <li> Item 3</li>
+   </ol>
+
+   <ul>
+      <li> Item 1</li>
+      <li> Item 2</li>
+      <li> Item 3</li>
+   </ul>
+   
+
+
+   <style type="text/css">
+
+   table {
+
+      border-collapse: collapse;
+   }
+   
+   td, th {
+
+      color: blue;
+      border: solid grey 1px;
+      padding: 0.5em 1em;
+      border: solid steelblue 5px;
+   }
+
+   th {
+
+      background: steelblue;
+      color: white;
+
+   }
+
+   </style>
+
+   <table>
+      <tr>
+         <th> Header 1</th>
+         <th> Header 2</th>
+         <th> Header 3</th>
+      </tr>
+      
+      <tr>
+         <td>Cell A 1</td>
+         <td>Cell A 2</td>
+         <td>Cell A 3</td>
+      </tr>
+      <tr>
+         <td>Cell B 1</td>
+         <td>Cell B 2</td>
+         <td>Cell B 3</td>
+      </tr>
+      <tr>
+         <td>Cell C 1</td>
+         <td>Cell C 2</td>
+         <td>Cell C 3</td>
+      </tr>
+   </table>
+   
+   
+   <style type="text/css">
+   .display {
+
+      margin-top: 2em;
+      border: solid red 1px;
+
+      display: inline-block;
+
+      width: 150px;
+      height: 150px;
+
+
+      /*visibility: hidden;
+      display: none; */
+
+      opacity: 1;
+
+      background: red;
+
+      background: rgba( 255, 0 , 0, 1);
+   }
+   </style>
+   
+   <div style="padding:1em; background:yellow;">
+   
+      <div class="display">I'm a div</div>
+      <span class="display">I'm a span</span>
+      <span class="display">I'm a span 2</span>
+
+   </div>
+   
+
+   <style type="text/css">
+
+   img.float {
+
+      width: 150px;
+      float: left;
+      float: right;
+      margin-right: 0.5em;
+      margin-bottom: 0.5em;
+      margin: 0.5em;
+   }
+
+   .float {
+
+   }
+   </style>
+   
+   <div style="margin-top: 2em; padding: 1em; border: solid grey 1px;">
+      <img src="php-elephant.png" class="float">
+      
+      This is some placeholder text...
+      This is some placeholder text...
+
+      <div style="clear: both;">Clear</div>
+      
+
+      This is some placeholder text...
+      This is some placeholder text...
+      This is some placeholder text...
+      This is some placeholder text...
+      This is some placeholder text...
+      This is some placeholder text...
+      This is some placeholder text...
+      This is some placeholder text...
+   </div>
+   
+   <style type="text/css">
+
+   .pos-wrap {
+      margin-top: 2em;
+      padding: 1em;
+      border: solid grey 1px;
+      height: 500px;
+      position: relative;
+   }
+
+   .pos-wrap img {
+
+      width: 150px;
+      margin: 0.5em;
+      border: solid red 1px;
+      position: fixed;
+      position: absolute;
+      bottom: 5em;
+      right: 5em;
+   }
+
+   </style>
+   
+   <div class="pos-wrap">
+
+      <img src="php-elephant.png">
+
+   </div>
+   
+
+
+
+   <style type="text/css">
+
+   .align-wrap {
+      margin-top: 2em;
+      padding: 1em;
+      border: solid grey 1px;
+      height: 500px;
+      position: relative;
+      text-align: center;
+   }
+
+   .align-wrap img {
+
+      width: 150px;
+      margin: 0.5em;
+      border: solid red 1px;
+      margin: 0 auto;
+   }
+
+   </style>
+   
+   <div class="align-wrap">
+
+      <img src="php-elephant.png">
+
+   </div>
+   
+</body>
+</html>

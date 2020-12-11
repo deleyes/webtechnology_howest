@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Selectors 2</title>
+</head>
+<body>
+
+   <style type="text/css">
+   
+   div {
+
+      border: solid grey 1px;
+      margin: 1em;
+   }
+
+   .grandparent div {
+
+      background: yellow;
+   }
+
+   .grandparent > div {
+
+      background: pink;
+   }
+
+   .parent,
+   .parent ~ div,
+   .parent ~ * {
+
+      color: blue;
+   }
+
+   .parent + div {
+
+      background: lightgreen;
+   }
+
+   .grandparent > div:first-child ,
+   .grandparent > div:last-child {
+
+      border: solid red 4px;
+   }
+
+   .grandparent > div:nth-child(1) ,
+   .grandparent > div:nth-child(4) {
+
+      outline: solid green 4px;
+   }
+
+   .grandparent > div:nth-child(2n ) {
+
+      outline: solid blue 4px;
+      background: lightgrey;
+   }
+
+   .child:hover {
+
+      background: lime;
+      font-size: larger;
+      border: dotted green 5px;
+   }
+
+   </style>
+
+   <div class="grandparent">
+
+      grand parent
+
+      <div class="parent">
+         parent 1
+      </div>
+      
+      <div>
+         parent 2
+         <div class="child">
+            child 1
+         </div>
+      </div>
+
+      <div>
+         parent 3
+         <div class="child">
+            child 1
+         </div>
+      </div>
+
+      <div>parent 4</div>
+
+      <div>parent 5</div>
+      
+   </div>
+   
+</body>
+</html>

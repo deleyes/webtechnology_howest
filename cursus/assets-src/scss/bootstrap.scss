@@ -1,0 +1,249 @@
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.3)) !default;
+$font-size-h2:            floor(($font-size-base * 2.0)) !default;
+$font-size-h3:            floor(($font-size-base * 1.8)) !default;
+$font-size-h4:            floor(($font-size-base * 1.6)) !default;
+$font-size-h5:            floor(($font-size-base * 1.4)) !default;
+$font-size-h6:            floor(($font-size-base * 1.2)) !default;
+
+$lightgray-bg : #f6f6f6;
+
+// Core variables and mixins
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/mixins";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/variables";
+
+// Reset and dependencies
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/glyphicons";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/normalize";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/print";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/responsive-utilities";
+
+// Core CSS
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/type";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/grid";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/scaffolding";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/tables";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/buttons";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/code";
+
+// Fancy stuff
+// @import "vendor/bootstrap/assets/stylesheets/bootstrap/button-groups";
+// @import "vendor/bootstrap/assets/stylesheets/bootstrap/dropdowns";
+// @import "vendor/bootstrap/assets/stylesheets/bootstrap/list-group";
+
+// Components
+// @import "vendor/bootstrap/assets/stylesheets/bootstrap/forms";
+// @import "vendor/bootstrap/assets/stylesheets/bootstrap/navbar";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/navs";
+@import "vendor/bootstrap/assets/stylesheets/bootstrap/alerts";
+// @import "vendor/bootstrap/assets/stylesheets/bootstrap/panels";
+// @import "vendor/bootstrap/assets/stylesheets/bootstrap/badges";
+// @import "vendor/bootstrap/assets/stylesheets/bootstrap/labels";
+
+// ========================================================================== //
+// TOC
+// ========================================================================== //
+
+.complete-toc {
+
+   padding-right: 10px;
+   @media (min-width: $screen-md-min) {
+      height: 100vh;
+      overflow-y: scroll;
+      top: 0;
+      position: -webkit-sticky;
+      position: sticky;
+   }
+
+   @media (max-width: $screen-md-min) {
+      border-bottom: solid lightgray 0.5em;
+      padding-bottom: 1em;
+      maring-bottom: 1em;
+   }
+
+   &>ul {
+
+      @extend .nav;
+      @extend .nav-pills;
+      @extend .nav-stacked;
+
+      & > li {
+         font-weight: bolder;
+
+         a {
+            padding-top: 3px;
+            padding-bottom: 3px;
+         }
+
+         &.active > a{
+            margin-top: 6px;
+            font-weight: bold;
+            padding-top: 3px;
+            padding-bottom: 3px;
+         }
+         li {
+
+            font-weight: normal;
+
+            a { padding: 2px; }
+         }
+      }
+   }
+}
+
+// ========================================================================== //
+// Site
+// ========================================================================== //
+
+h1, h2, h3, h4, h5, h6 {
+
+   margin-top: 1em;
+}
+
+.site-header {
+
+   // background                 : midnightblue;
+   // border-bottom-left-radius  : 1em;
+   // border-bottom-right-radius : 1em;
+   // box-shadow                 : 1 0 .9em gray;
+   // opacity                    : 0.5;
+   // position                   : sticky;
+   // text-decoration            : underline overline;
+   background                    : $lightgray-bg;
+   color                         : #888;
+   font-family                   : monospace;
+   font-size                     : 1.1em;
+   font-variant                  : small-caps;
+   font-weight                   : bold;
+   margin-bottom                 : 2em;
+   padding                       : 1em;
+   text-align                    : center;
+   top                           : 0;
+}
+
+blockquote {
+
+   font-size: 1em;
+}
+
+table {
+   @extend table;
+   @extend .table;
+}
+
+// ========================================================================== //
+// Embeds
+// ========================================================================== //
+
+pre {
+   border: none;
+   background: none;
+   border-radius: 0;
+   margin-bottom: 0;
+}
+
+div.sourceCode{
+
+   background: $lightgray-bg;
+   padding: 0.5em;
+   padding-bottom: 0;
+   margin-bottom: 0.5em;
+   font-size: 0.9em;
+}
+
+.m4_indent {
+
+   margin-left: 40px;
+}
+
+.embed--srcfile {
+
+   position: absolute;
+   margin: 1.5em;
+   margin-right: $grid-gutter-width;
+   right: 0px;
+   z-index: 1;
+   font-size: 0.75em;
+   font-style: italic;
+
+   &:not(a) {
+      color: gray;
+   }
+}
+
+.embed--src {
+
+   position: relative;
+}
+
+.embed--output {
+
+   border-left: solid lightblue  0.5em;
+}
+
+.run--output {
+
+   font-size: 0.7em;
+   border: solid lightgray 1px;
+   max-height: 20em;
+   margin-top: -8px;
+}
+
+pre.embed--output {
+
+   padding: 2em 8px;
+}
+
+iframe {
+
+   width: 100%;
+   // overflow-y: hidden;
+}
+
+// ========================================================================== //
+// W3C
+// ========================================================================== //
+
+a.w3c-ref {
+
+   border-width: 1px;
+   border-bottom-style: dotted ;
+   background-position: center right;
+   background-repeat: no-repeat;
+   background-image: url(../img/external-link-ltr-icon.png);
+   padding-right: 13px;
+}
+
+// ========================================================================== //
+// Exercise
+// ========================================================================== //
+
+.exercise{
+
+   border-left: solid steelblue 0.5em;
+   padding: 1em;
+   margin: 1em 0;
+   background: #FAFDFF;
+}
+
+// ========================================================================== //
+// Footer
+// ========================================================================== //
+
+footer {
+
+   margin-top: 2em;
+   padding: 2em;
+   border-top: solid lightgray 1px;
+}
+
+// ========================================================================== //
+// Print
+// ========================================================================== //
+
+@media print {
+    h1 {page-break-before: always;}
+}

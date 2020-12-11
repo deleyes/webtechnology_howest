@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>About CSS selectors</title>
+</head>
+<body>
+
+   <style type="text/css">
+
+   div {
+
+      border: solid red 2px;
+   }
+
+   p {
+
+      margin: 1em;
+   }
+
+   p.yellow-bg {
+
+      background: yellow;
+   }
+
+   p .lightblue-bg {
+
+      background: lightblue;
+   }
+
+   div.class1 .class2 blockquote q {
+
+      color: grey;
+   }
+
+   q {
+
+      color: red;
+   }
+   q {
+
+      color: green;
+   }
+
+   div.class.class.class {
+
+   }
+
+   .blue-color {
+
+      color: blue;
+   }
+
+   #first-div {
+
+      background: pink;
+   }
+
+   </style>
+   
+   <div id="first-div">
+      Div 1
+   </div>
+
+   <div class="yellow-bg blue-color">
+      Div 2
+   </div>
+   
+   <div>
+      Div 3
+   </div>
+
+   <div class="yellow-bg">
+      Div 4
+   </div>
+
+   <p class="yellow-bg">
+      P 1
+
+      <span class="lightblue-bg">Color me</span>
+      
+      still P1
+   </p>
+</body>
+</html>
