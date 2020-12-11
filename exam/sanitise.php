@@ -114,7 +114,7 @@ if (!isset($_POST["submit"])) {
             echo "<h3>$header</h3>";
             echo $fasta;
             echo "</pre>";
-            echo "<hr>";
+
 
             echo "<table>";
             echo "<tr>";
@@ -134,6 +134,8 @@ if (!isset($_POST["submit"])) {
                 }
             }
             echo "</table>";
+
+            echo "<hr>";
         }
 
 
